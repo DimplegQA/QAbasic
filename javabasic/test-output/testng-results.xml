@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-08T10:08:30 CST" name="Default suite" finished-at="2024-02-08T10:08:32 CST" duration-ms="1989">
+    <groups>
+    </groups>
+    <test started-at="2024-02-08T10:08:30 CST" name="Default test" finished-at="2024-02-08T10:08:32 CST" duration-ms="1989">
+      <class name="testng.screenshort">
+        <test-method is-config="true" signature="openbrowser()[pri:0, instance:testng.screenshort@185a6e9]" started-at="2024-02-08T10:08:18 CST" name="openbrowser" finished-at="2024-02-08T10:08:30 CST" duration-ms="11424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method is-config="true" signature="max()[pri:0, instance:testng.screenshort@185a6e9]" started-at="2024-02-08T10:08:30 CST" name="max" finished-at="2024-02-08T10:08:31 CST" duration-ms="1346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- max -->
+        <test-method signature="ss()[pri:0, instance:testng.screenshort@185a6e9]" started-at="2024-02-08T10:08:31 CST" name="ss" finished-at="2024-02-08T10:08:32 CST" duration-ms="520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ss -->
+        <test-method is-config="true" signature="testas()[pri:0, instance:testng.screenshort@185a6e9]" started-at="2024-02-08T10:08:32 CST" name="testas" finished-at="2024-02-08T10:08:33 CST" duration-ms="975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testas -->
+      </class> <!-- testng.screenshort -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
