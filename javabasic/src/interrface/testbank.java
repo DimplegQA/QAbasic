@@ -15,9 +15,8 @@ public class testbank {
 		b.rateofinterest();
 		b.netbanking();
 		
-		
-		bankb c = new boa();
-		c.nooftransation();
+	bankb a =new boa();
+	a.nooftransation();
 		
 	}
 

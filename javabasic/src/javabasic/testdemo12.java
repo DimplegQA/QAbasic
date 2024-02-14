@@ -1,30 +1,30 @@
 package javabasic;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.Select;
+
 public class testdemo12 {
-public static void main(String[] args) {
-add2(5,9)	;
-
-add2(25,99)	;
-add2(115,679)	;
-add1();
-add3();
-}
-public static void add2(int x , int y) { // with i/p and o/p
-	int c = x+y/10;
-	
-System.out.println(c+x*y);
-}
-
-public static void add1() { // with no i/p and o/p
-	int c = 2+100/10;
-	
-System.out.println(c+2*7);
-}
-
-// with no i/p and o/p
-public static void add3() { // with no i/p and o/p
-	
-	
-System.out.println("hi");
-}
-}
+public static void main(String[] args) throws InterruptedException {
+	// TODO Auto-generated method stub
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\git\\QAbasic\\javabasic\\resource\\chromedriver.exe");
+			//webDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			WebDriver driver = new ChromeDriver(options);
+			driver.get("https://www.hyrtutorials.com/p/html-dropdown-elements-practice.html");
+			driver.manage().window().maximize();
+			WebElement  b =driver.findElement(By.id("course"));
+			Select a = new Select(b);
+			//value
+			//index
+			//visib
+			a.selectByValue("net");
+			Thread.sleep(4000);
+			a.selectByVisibleText("Java");
+			Thread.sleep(4000);
+		a.selectByIndex(4);
+			}}

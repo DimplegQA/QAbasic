@@ -6,7 +6,7 @@
       <class name="testng.javascript">
         <methods>
           <include name="openbrowser"/>
-          <include name="closebrowser"/>
+          <include name="dimple"/>
           <include name="dimple1"/>
         </methods>
       </class> <!-- testng.javascript -->

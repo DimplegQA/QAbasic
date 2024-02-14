@@ -13,7 +13,7 @@ public class javascript {
 	 @BeforeTest
 	    public void openbrowser() {
 	        // Set the path to the chromedriver executable
-		 System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Pictures\\javabasic\\resource\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\git\\QAbasic\\javabasic\\resource\\chromedriver.exe");
 			//webDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
@@ -37,7 +37,7 @@ public class javascript {
 		
 	 }
 	 
-	 @AfterTest
+	 @Test
 	 public void closebrowser() {
 		 driver.close();
 	 }

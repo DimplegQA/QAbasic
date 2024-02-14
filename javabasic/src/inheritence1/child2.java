@@ -2,7 +2,7 @@ package inheritence1;
 
 import javabasic.s1ample1;
 
-public class child2 extends paraent {
+public class child2 extends child1 {
 	public void c2name() {
 		int a=8;
 		int b=10;
@@ -20,7 +20,7 @@ public class child2 extends paraent {
 	}
 public static void main(String[] args) {
 	child2 u = new child2();
-	
+	u.
 	u.c2name();
 }
 

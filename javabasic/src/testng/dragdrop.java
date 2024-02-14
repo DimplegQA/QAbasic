@@ -15,7 +15,7 @@ public class dragdrop {
 	 @BeforeTest
 	    public void openbrowser() {
 	        // Set the path to the chromedriver executable
-		 System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Pictures\\javabasic\\resource\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\git\\QAbasic\\javabasic\\resource\\chromedriver.exe");
 			//webDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
@@ -28,6 +28,7 @@ public class dragdrop {
 		 WebElement drag1=driver.findElement(By.id("draggable"));
 		 WebElement drop1=driver.findElement(By.id("droppable"));
 		 Actions abc = new Actions(driver);
+		 
 	abc.dragAndDrop(drag1, drop1).build().perform();
 		//abc.dragAndDrop(drag1, drop1).build().perform();
 		// obj.dragAndDrop(drag1, drop1).build().perform();

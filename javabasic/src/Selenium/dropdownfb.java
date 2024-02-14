@@ -9,7 +9,7 @@ public class dropdownfb {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Pictures\\javabasic\\resource\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\git\\QAbasic\\javabasic\\resource\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new ChromeDriver(options);//C:\Users\DELL\eclipse-workspace\TEST\res\sel\chromedriver - Copy.exe
@@ -19,17 +19,20 @@ public class dropdownfb {
 		WebElement month=driver.findElement(By.xpath("//select[@id='month']"));
 		WebElement year=driver.findElement(By.xpath("//select[@id='year']"));
 		
-		dropdownfb.dd(day,"1");
-		dropdownfb.dd(month,"1");
-		dropdownfb.dd(year,"2021");
+		dropdownfb.dd(day,"14");
+		dropdownfb.dd(month,"Mar");
+		dropdownfb.dd(year,"1909");
+		dropdownfb.dd(day,"12");
 		
+		WebElement radiobutton=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/form/div[1]/div[7]/span/span[1]/input"));
+		radiobutton.click();
 	}
 	
 		
-	public static void dd(WebElement ee,String aa) {
-		Select drop= new Select(ee);
+	public static void dd(WebElement data,String txt) {
+		Select drop= new Select(data);
 	
-	drop.selectByValue(aa);
+drop.selectByVisibleText(txt);
 	
 		
 	}

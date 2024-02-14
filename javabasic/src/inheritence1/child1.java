@@ -11,9 +11,11 @@ public class child1 extends paraent{
 	public void cage() {
 		System.out.println("25");
 	}
+
 public static void main(String[] args) {
-	
-	c1gender();
+	//obj
+	child1 b = new child1();
+	b.name();
 	
 	
 }

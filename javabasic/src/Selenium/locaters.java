@@ -9,7 +9,7 @@ public class locaters {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Pictures\\javabasic\\resource\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\git\\QAbasic\\javabasic\\resource\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new ChromeDriver(options);
@@ -19,19 +19,22 @@ public class locaters {
 		//className 
 		// Linktext 
 		//xpath
-		
-		
-				//driver.findElement(By.id(null))
 		driver.get("https://www.google.com/");
 		Thread.sleep(4000);
-		driver.findElement(By.id("APjFqb")).sendKeys("testng");
+		driver.findElement(By.id("APjFqb")).sendKeys("selenium");
+		driver.findElement(By.className("gNO89b")).click();
+		driver.navigate().back();
 		driver.navigate().refresh();
-		driver.findElement(By.name("q")).sendKeys("java");
-		Thread.sleep(4000);
-		
 		//driver.navigate().refresh();
-		driver.findElement(By.name("btnK")).click();
+driver.findElement(By.name("q")).sendKeys("java");
 		Thread.sleep(4000);
+driver.findElement(By.className("gNO89b")).click();
+		driver.navigate().back();
+		driver.findElement(By.linkText("Gmail")).click();
+		driver.navigate().back();
+		driver.findElement(By.partialLinkText("Imag")).click();
+		//driver.findElement(By.name("btnK")).click();
+		//Thread.sleep(4000);
 		//driver.findElement(By.className("gNO89b")).click();
 		/*driver.findElement(By.partialLinkText("ail")).click();
 		driver.navigate().back();

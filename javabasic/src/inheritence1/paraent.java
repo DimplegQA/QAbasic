@@ -12,8 +12,5 @@ public void pgender() {
 public void phight() {
 	System.out.println("6.4 ");
 }
-public static void main(String[] args) {
-	child1.c1gender();
-}
 
 }

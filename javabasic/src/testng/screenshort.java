@@ -15,12 +15,15 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+
+
+
 public class screenshort {
 	static WebDriver driver;
 	 @BeforeSuite
 	    public void openbrowser() {
 	        // Set the path to the chromedriver executable
-		 System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Pictures\\javabasic\\resource\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\git\\QAbasic\\javabasic\\resource\\chromedriver.exe");
 			//webDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
@@ -35,14 +38,14 @@ public class screenshort {
 	 public void ss() {
 		File abc= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileHandler.copy(abc, new File("C:\\Users\\DELL\\Pictures\\javabasic\\screenshot\\dimple.png"));
+			FileHandler.copy(abc, new File("C:\\Users\\DELL\\git\\QAbasic\\javabasic\\screenshot\\dimple.png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			
 		}}
 		// tagname
-		@AfterSuite
+		@Test
 		public void testas() {
 		System.out.println("hi this aftersuite");	
 		driver.close();
