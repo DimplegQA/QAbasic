@@ -13,12 +13,6 @@ public class listeners implements ITestListener  {
 	}
 
 	@Override
-	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestSuccess(result);
-	}
-
-	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestFailure(result);
@@ -42,11 +36,6 @@ public class listeners implements ITestListener  {
 		ITestListener.super.onTestFailedWithTimeout(result);
 	}
 
-	@Override
-	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onStart(context);
-	}
 
 	@Override
 	public void onFinish(ITestContext context) {

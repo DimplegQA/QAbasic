@@ -16,36 +16,30 @@ public class dragdrop {
 	    public void openbrowser() {
 	        // Set the path to the chromedriver executable
 		 System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\git\\QAbasic\\javabasic\\resource\\chromedriver.exe");
-			//webDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
-			 driver = new ChromeDriver(options);	
-			 driver.get("https://jqueryui.com/droppable/");
+			 driver = new ChromeDriver(options);
+			 // this related to go page
+			// driver.get("https://jqueryui.com/droppable/");
+			 driver.get("file:///C:/Users/DELL/Desktop/child.html");
 			 driver.manage().window().maximize();}
 	 @Test
 	 public void  drdp() throws InterruptedException {
-		 driver.switchTo().frame(0);
-		 WebElement drag1=driver.findElement(By.id("draggable"));
-		 WebElement drop1=driver.findElement(By.id("droppable"));
-		 Actions abc = new Actions(driver);
-		 
-	abc.dragAndDrop(drag1, drop1).build().perform();
-		//abc.dragAndDrop(drag1, drop1).build().perform();
-		// obj.dragAndDrop(drag1, drop1).build().perform();
-		 
-		
+		// driver.switchTo().frame(0);
+		 WebElement drag1=driver.findElement(By.xpath("//*[@id=\"drag1\"]"));
+		 WebElement drop1=driver.findElement(By.xpath("/html/body/div[2]"));
+		 Thread.sleep(4000);
+		 Actions o = new Actions(driver);
+		o.dragAndDrop(drag1, drop1).build().perform();
 		
 		 Thread.sleep(4000);
 		 driver.switchTo().defaultContent();}
 		 //driver.close();
 	 @Test
 	 public void mouseover() throws InterruptedException {
-		WebElement mv= driver.findElement(By.linkText("Resizable"));
-		Actions abc = new Actions(driver);
-		abc.moveToElement(mv).build().perform();
-		//abc.moveToElement(mv).build().perform();
-	//	WebElement mv1=driver.findElement(By.xpath("//*[@id=\"sidebar\"]/aside[1]/ul/li[3]/a"));
-	//	abc.moveToElement(mv1).build().perform();
+		WebElement mv= driver.findElement(By.linkText("Selectable"));
+		Actions b = new Actions(driver);
+	b.moveToElement(mv).build().perform();
 		Thread.sleep(4000);
 	 }
 		/* @Test

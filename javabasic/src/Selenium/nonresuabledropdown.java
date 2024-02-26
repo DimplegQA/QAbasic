@@ -18,25 +18,13 @@ public class nonresuabledropdown {
 		driver.get("https://www.hyrtutorials.com/p/html-dropdown-elements-practice.html");
 		driver.manage().window().maximize();
 		
-		WebElement courseElement=driver.findElement(By.id("course"));
+		WebElement courseElement=driver.findElement(By.xpath("//select[@id=\"course\"]"));
 		
-		Select a = new Select(courseElement);
+		Select i = new Select(courseElement);
 		// value
 		// index
 		//visibletext
-		
-		/*Dropdown.selectByValue("net");
-		System.out.println(Dropdown);
-		Thread.sleep(4000);
-		Dropdown.selectByIndex(1);
-		System.out.println(Dropdown);
-		Thread.sleep(4000);*/
-		
-			a.selectByVisibleText("Java");
-			Thread.sleep(4000);
-			a.selectByIndex(2);
-			Thread.sleep(4000);
-			a.selectByValue("js");
+		i.selectByVisibleText("Java");
 	}
 
 }

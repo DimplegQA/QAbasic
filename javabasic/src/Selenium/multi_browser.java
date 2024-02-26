@@ -2,16 +2,17 @@ package Selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 public class multi_browser {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		        // Set the path to the ChromeDriver executable
-		        System.setProperty("webdriver.chrome.driver", "./resource/chromedriver.exe");
-		        ChromeOptions options = new ChromeOptions();
-				options.addArguments("--remote-allow-origins=*");
-				WebDriver driver = new ChromeDriver(options);
+		        System.setProperty("webdriver.gecko.driver", "./resource/geckodriver.exe");
+		        //ChromeOptions options = new ChromeOptions();
+				//options.addArguments("--remote-allow-origins=*");
+			//	WebDriver driver = new ChromeDriver(options);
 		        // Create the first browser instance
-		        WebDriver driver1 = new ChromeDriver();
+		        WebDriver driver1 = new FirefoxDriver();
 		        Thread.sleep(4000);
 		        driver1.get("https://www.amazon.com/");
 		        // Create the second browser instance

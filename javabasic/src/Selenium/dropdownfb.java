@@ -18,14 +18,13 @@ public class dropdownfb {
 		WebElement day=driver.findElement(By.xpath("//*[@id=\"day\"]"));
 		WebElement month=driver.findElement(By.xpath("//select[@id='month']"));
 		WebElement year=driver.findElement(By.xpath("//select[@id='year']"));
+		dropdownfb.dd(day, "14");
+		dropdownfb.dd(month, "Sep");
+		dropdownfb.dd(year, "2020");
+		dropdownfb.dd(year, "1999");
 		
-		dropdownfb.dd(day,"14");
-		dropdownfb.dd(month,"Mar");
-		dropdownfb.dd(year,"1909");
-		dropdownfb.dd(day,"12");
-		
-		WebElement radiobutton=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/form/div[1]/div[7]/span/span[1]/input"));
-		radiobutton.click();
+		driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/form/div[1]/div[7]/span/span[1]/input")).click();
+
 	}
 	
 		

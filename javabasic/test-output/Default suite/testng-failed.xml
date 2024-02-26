@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng.javascript">
+      <class name="testng.dragdrop">
         <methods>
+          <include name="mouseover"/>
           <include name="openbrowser"/>
-          <include name="dimple"/>
-          <include name="dimple1"/>
         </methods>
-      </class> <!-- testng.javascript -->
+      </class> <!-- testng.dragdrop -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

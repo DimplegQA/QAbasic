@@ -35,6 +35,21 @@ public class grouping {
     	System.out.println("this is regression group");
     }
 
-
+    @Test(groups = "retest")
+	public void test11() {
+		System.out.println("Hi i am  in test1");
+	}
+	@Test(groups = "retest")
+	public void test12() {
+		System.out.println("Hi i am  in test2");
+	}
+	@Test(groups = "retest")
+	public void test13() {
+		System.out.println("Hi i am  in test3");
+	}
+	@Test(groups = "retest")
+	public void test14() {
+		System.out.println("Hi i am  in test4");
+	}
 }
 

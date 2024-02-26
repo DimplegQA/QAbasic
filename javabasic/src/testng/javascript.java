@@ -25,7 +25,7 @@ public class javascript {
 	 public void dimple() throws InterruptedException {
 		 
 		 JavascriptExecutor js=(JavascriptExecutor)driver;
-		
+	
 		 js.executeScript("window.scrollBy(0,4000);");
 		 Thread.sleep(4000);}
 	 @Test
@@ -37,7 +37,7 @@ public class javascript {
 		
 	 }
 	 
-	 @Test
+	 @AfterTest
 	 public void closebrowser() {
 		 driver.close();
 	 }

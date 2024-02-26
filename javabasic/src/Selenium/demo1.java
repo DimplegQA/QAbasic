@@ -13,15 +13,16 @@ public class demo1 {
 		//linktext
 		//class
 		//name
-		//
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Pictures\\javabasic\\resource\\chromedriver.exe");
+		//xpath
+		System.setProperty("webdriver.chrome.driver",".\\resource\\chromedriver.exe");
 		//webDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("https://www.selenium.dev/");
-		driver.findElement(By.partialLinkText("Watch the")).click();
+		driver.findElement(By.partialLinkText("Read all about it!")).click();
+		//driver.findElement(by.)
 		
 	}
 

@@ -21,6 +21,7 @@ public class alert {
      driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("1234");
        Thread.sleep(2000);
        driver.findElement(By.xpath("//*[@id=\"loginButton\"]")).click();
+       Thread.sleep(4000);
        driver.switchTo().alert().accept();
      
       // driver.switchTo().alert().accept();

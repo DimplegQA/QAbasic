@@ -14,7 +14,7 @@ public class prompt {
 			 options.addArguments("--remote-allow-origins=*");
 		        WebDriver driver = new ChromeDriver(options);
 		        driver.manage().window().maximize();
-			driver.get("file:///C:/Users/DELL/Desktop/G.dimple/prompt.html");
+			driver.get("C:\\Users\\DELL\\Desktop\\G.dimple\\logform1\\prompt.html");
 			Thread.sleep(4000);
 	        driver.findElement(By.xpath("/html/body/button")).click();
 	        Thread.sleep(4000);	      
