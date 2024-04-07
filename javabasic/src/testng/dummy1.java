@@ -31,36 +31,22 @@ public class dummy1 {
 		  case"Chrome":
 
 			  WebDriverManager.chromedriver().setup();
-
-			  ChromeOptions options = new ChromeOptions();
-
-			  options.addArguments("--remote-allow-origins=*");
-
-			  driver = new ChromeDriver(options);
+				WebDriver driver = new ChromeDriver();
 
 			  break;
 
 		  case"edge":
 
 			  WebDriverManager.edgedriver().setup();
+				WebDriver driver1 = new EdgeDriver();
 
-			  EdgeOptions options1 = new EdgeOptions();
-
-			  options1.addArguments("--remote-allow-origins=*");
-
-			  driver = new EdgeDriver(options1);
 
 			  break;
 
 		  case"firefox":
 
-			  WebDriverManager.firefoxdriver().setup();
-
-			  FirefoxOptions options2 = new FirefoxOptions();
-
-			  options2.addArguments("--remote-allow-origins=*");
-
-			  driver = new FirefoxDriver(options2);
+			 WebDriverManager.firefoxdriver().setup();
+			 WebDriver driver2 = new FirefoxDriver();
 
 			  break;
 

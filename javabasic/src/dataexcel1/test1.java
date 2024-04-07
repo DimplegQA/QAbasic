@@ -13,7 +13,7 @@ public class test1 {
     XSSFWorkbook workbook;
 try {
 	//String projpath=System.getProperty("user.dir");//to find the location of the file
-	workbook = new XSSFWorkbook("C:\\Users\\DELL\\Pictures\\Object repository\\excel\\data.xlsx");// to file in the given path
+	workbook = new XSSFWorkbook(".\\excel\\data.xlsx");// to file in the given path
 	XSSFSheet sheet= workbook.getSheet("DIMPLE");//to get desire sheet in workbook
 	int row=sheet.getPhysicalNumberOfRows();// to access the row 
 	String cell = sheet.getRow(0).getCell(0).getStringCellValue();// to access the cell

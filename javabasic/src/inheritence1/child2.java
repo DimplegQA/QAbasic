@@ -20,8 +20,7 @@ public class child2 extends child1 {
 	}
 public static void main(String[] args) {
 	child2 u = new child2();
-	u.
-	u.c2name();
+	
 }
 
 }

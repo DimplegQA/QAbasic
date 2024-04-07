@@ -5,6 +5,12 @@ public class test extends bmw{
 	test o = new test();
 	o.color();
 	o.model();
+	}
+
+	@Override
+	void version() {
+		// TODO Auto-generated method stub
+		
 	}	
 	 
 }

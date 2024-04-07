@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Default suite" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test">
+ 
+<parameter name="test_url1" value="https://www.walmart.com/"></parameter>
+<parameter name="url2" value="https://www.w3schools.com/"></parameter>
+<parameter name="url" value="https://mvnrepository.com/"></parameter>
+<parameter name="x" value="34"></parameter>
+<parameter name="y" value="55"></parameter>
+<parameter name="z" value="88"></parameter>
+<parameter name="o" value="44"></parameter>
+  <classes>
+      <class name="testng.parameterdemo"/>
+    </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->

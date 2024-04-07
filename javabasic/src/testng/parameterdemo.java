@@ -18,7 +18,7 @@ public class parameterdemo {
 	        driver = new ChromeDriver(options);	
 		}
 	@Test
-	@Parameters("url1")
+	@Parameters("test_url1")
 	public void test1(String url) {
 		driver.get(url);
 		System.out.println("Page title is :"+driver.getTitle());
@@ -37,11 +37,11 @@ public class parameterdemo {
 		System.out.println("Page title is :"+driver.getTitle());
 	}
 	@Test
-	@Parameters({"x","y","z","h"})
-	public void test2(int x,int y,int z,int r) {
+	@Parameters({"x","y","z","o"})
+	public void test2(int x,int y,int z,int o) {
 		//driver.get(url);
 		//System.out.println("Page title is :"+driver.getTitle());
-		int c=x+y+z+r;
+		int c=x+y+z+o;
 		System.out.println("add "+c);
 	}
 	@AfterTest

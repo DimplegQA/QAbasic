@@ -3,7 +3,7 @@ package testng;
 import org.testng.annotations.Test;
 
 public class grouping {
-	@Test(groups = "smoke")
+	@Test(groups = "login")
 	public void test1() {
 		System.out.println("Hi i am  in test1");
 	}
@@ -28,7 +28,6 @@ public class grouping {
         // Test logic
 		System.out.println("this is smoke group");
     }
-
     @Test(groups = "regression")
     public void testMethod2() {
         // Test logic

@@ -5,10 +5,10 @@
 	  <parameter name="url1" value="https://jqueryui.com/droppable/"></parameter>
 	  <parameter name="url" value="https://www.amazon.com/"></parameter>
 	  <parameter name="url2" value="https://www.apache.org/dyn/closer.lua/poi/dev/bin/poi-bin-3.13-beta1-20150723.zip"></parameter>
-	   <parameter name="x" value="22" />
-	   <parameter name="h" value="24"></parameter>
-	        <parameter name="y" value="22" />
-	        <parameter name="z" value="8"></parameter>
+	   <parameter name="x" value="44"></parameter>
+	   <parameter name="y" value="22"></parameter>
+	<parameter name="z" value="12"></parameter>
+	<parameter name="o" value="9"></parameter>
     <classes>
       <class name="testng.parameterdemo"/>
     </classes>

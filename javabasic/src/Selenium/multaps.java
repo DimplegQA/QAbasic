@@ -16,17 +16,16 @@ public class multaps {
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/gmail/about/");
-		//driver.findElement(By.linkText("Sign in")).click();
-		// driver.findElement(By.linkText("Help")).click();
 		 Thread.sleep(4000);
 		 driver.switchTo().newWindow(WindowType.TAB);
-		 driver.navigate().to("https://www.google.com/gmail/about/");
-		driver.switchTo().newWindow(WindowType.TAB);	
-		 driver.navigate().to("https://www.google.com/gmail/about/");
-		driver.switchTo().newWindow(WindowType.TAB);
-		driver.switchTo().newWindow(WindowType.WINDOW);
-		driver.switchTo().newWindow(WindowType.WINDOW);
-		driver.navigate().to("https://www.hdfcbank.com/");
+		 driver.navigate().to("https://www.selenium.dev/");
+		 driver.switchTo().newWindow(WindowType.TAB);
+		 driver.switchTo().newWindow(WindowType.TAB);
+		 driver.switchTo().newWindow(WindowType.WINDOW);
+		 
+		 driver.switchTo().newWindow(WindowType.WINDOW);
+		 	//	driver.switchTo().newWindow(WindowType.WINDOW);
+		//driver.navigate().to("https://www.hdfcbank.com/");
 		//driver.switchTo().defaultContent();
 		//driver.close();
 	}

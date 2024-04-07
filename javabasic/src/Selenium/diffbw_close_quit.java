@@ -23,10 +23,10 @@ public class diffbw_close_quit {
 		driver.get("https://www.google.com/gmail/about/");
 		driver.findElement(By.linkText("Sign in")).click();
 			driver.findElement(By.linkText("Help")).click();
-		 
-		 Thread.sleep(4000);
+		 // diff b/w driver.quit & close
+		 Thread.sleep(8000);
 		driver.quit();
-		 // driver.close();
+		  //driver.close();
 
 	}
 

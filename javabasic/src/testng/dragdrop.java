@@ -20,8 +20,8 @@ public class dragdrop {
 			options.addArguments("--remote-allow-origins=*");
 			 driver = new ChromeDriver(options);
 			 // this related to go page
-			// driver.get("https://jqueryui.com/droppable/");
-			 driver.get("file:///C:/Users/DELL/Desktop/child.html");
+			driver.get("https://jqueryui.com/droppable/");
+			 //driver.get("file:///C:/Users/DELL/Desktop/child.html");
 			 driver.manage().window().maximize();}
 	 @Test
 	 public void  drdp() throws InterruptedException {
@@ -29,15 +29,14 @@ public class dragdrop {
 		 WebElement drag1=driver.findElement(By.xpath("//*[@id=\"drag1\"]"));
 		 WebElement drop1=driver.findElement(By.xpath("/html/body/div[2]"));
 		 Thread.sleep(4000);
-		 Actions o = new Actions(driver);
-		o.dragAndDrop(drag1, drop1).build().perform();
-		
+		 Actions i = new Actions(driver);
+		i.dragAndDrop(drag1, drop1).build().perform();
 		 Thread.sleep(4000);
 		 driver.switchTo().defaultContent();}
 		 //driver.close();
 	 @Test
 	 public void mouseover() throws InterruptedException {
-		WebElement mv= driver.findElement(By.linkText("Selectable"));
+		WebElement mv= driver.findElement(By.linkText("Draggable"));
 		Actions b = new Actions(driver);
 	b.moveToElement(mv).build().perform();
 		Thread.sleep(4000);

@@ -18,22 +18,18 @@ public class dropdownfb {
 		WebElement day=driver.findElement(By.xpath("//*[@id=\"day\"]"));
 		WebElement month=driver.findElement(By.xpath("//select[@id='month']"));
 		WebElement year=driver.findElement(By.xpath("//select[@id='year']"));
-		dropdownfb.dd(day, "14");
-		dropdownfb.dd(month, "Sep");
-		dropdownfb.dd(year, "2020");
-		dropdownfb.dd(year, "1999");
-		
+		dropdownfb.abc(month, "Mar");
+		dropdownfb.abc(day, "14");
+		dropdownfb.abc(year, "2020");
+		dropdownfb.abc(month, "Jun");
 		driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/form/div[1]/div[7]/span/span[1]/input")).click();
-
 	}
 	
 		
-	public static void dd(WebElement data,String txt) {
-		Select drop= new Select(data);
-	
+	public static void abc(WebElement info,String txt) {
+		Select drop= new Select(info);	
 drop.selectByVisibleText(txt);
-	
-		
-	}
+}
 
+	
 }

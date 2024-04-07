@@ -65,7 +65,7 @@ public class firsttestng {
 		 }	
 	@BeforeTest
 	public void testBT() {
-	System.out.println("hi this beforetest");	
+		
 	}
 }
 

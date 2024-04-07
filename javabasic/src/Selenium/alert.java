@@ -22,12 +22,11 @@ public class alert {
        Thread.sleep(2000);
        driver.findElement(By.xpath("//*[@id=\"loginButton\"]")).click();
        Thread.sleep(4000);
-       driver.switchTo().alert().accept();
-     
-      // driver.switchTo().alert().accept();
+    
+    driver.switchTo().alert().accept();
        Thread.sleep(4000);
        
-      driver.close();
+    //  driver.close();
 	}
 
 }
