@@ -7,10 +7,15 @@ public class fibonocci_serice_dynamic_inputs_loops {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//0 1 1 2 3 5 8 
+		
+		
+		
+		
 int a=0,b=1,s;
 try (Scanner scanner = new Scanner(System.in)) {
 	System.out.print("enter range of fibonocci serices ");
 	int n = scanner.nextInt();
+	
 	
 	int[] m = new int[n];
 	//int n =400;

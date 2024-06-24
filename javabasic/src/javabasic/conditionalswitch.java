@@ -2,9 +2,30 @@ package javabasic;
 
 public class conditionalswitch {
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// FOR
+	//WHILE 
+	//DO WHILE
+	
+	
+	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		char day = 6;
+		char day = 4;
 		switch (day) {		
 		  case 1:
 		    System.out.println("Monday");
@@ -23,6 +44,7 @@ public class conditionalswitch {
 		    int j=6;
 		    int i=4;
 		    System.out.println(j*i);
+		    System.out.println(j+i);
 		    break;
 		  case 5:
 		    System.out.println("Friday");
@@ -32,7 +54,6 @@ public class conditionalswitch {
 		    int  y=9;
 		    int u=12;
 		    System.out.println(y+u+8);
-		    
 		    break;
 		  case 7:
 		    System.out.println("Sunday");

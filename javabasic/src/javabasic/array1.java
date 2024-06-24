@@ -11,7 +11,7 @@ public class array1 {
     for(int i=0;i<=n.length;i++) {
     	System.out.println(n[i]);
     }*/
-    int[][] s = { { 1, 2 }, { 3, 4 } };
+    int[][] s = { { 1, 2,4 }, { 3, 4,8 },{4,9,8 }};
 	int m=s[0].length;
     for (int i = 0; i < s.length; i++) {
         for (int j = 0; j < m; j++) {

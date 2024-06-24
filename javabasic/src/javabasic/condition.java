@@ -4,24 +4,21 @@ public class condition {
 
 	public static void main(String[] args) {
 		//0 to 100
-        int marks = 10;
-        if (marks <= 20) {
-        	//55<=20
-        	//0-20
+        int marks = 180;
+        if (marks <= 20) {       	
         	System.out.println("student grade is F "+ marks);
         	}
         	else if (marks<= 40){
-        		  //80<=40
-        	//0-40
+        		 
         	System.out.println("student grade is D " +marks);
              }
         
         	else if (marks<= 50){
-        		   //80<=50     		
+        		     		
             	System.out.println("student grade is C "+marks );
                  }
         	else if (marks<=70) {
-        			//80<=70
+        		
             	System.out.println("student grade is B " +marks);
         	}
         	else if (marks<= 90){
